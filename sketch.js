@@ -11,7 +11,7 @@ function setup() {
   world = engine.world;
   Engine.run(engine);
 
-  polygon = new Polygon(50,200,10);
+  polygon = new Polygon(50,200,-10);
   sling = new SlingShot(polygon.body,{x: 100, y: 200});
 
   ground = new Ground(500, 580, 1000, 40);
@@ -79,8 +79,8 @@ function draw() {
 
   box21.display();
 
-  sling.display(); 
   polygon.display();
+  sling.display(); 
 
   drawSprites();
 }
